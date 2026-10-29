@@ -1,0 +1,5 @@
+tests
+phpunit.xml
+.distignore
+README.md
+.github
