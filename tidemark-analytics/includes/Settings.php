@@ -118,8 +118,8 @@ class Settings
     {
         $options = $this->get();
         ?>
-        <input type="url" id="tidemark-address" class="regular-text code" name="<?php echo esc_attr(self::OPTION); ?>[address]" value="<?php echo esc_attr($options['address']); ?>" placeholder="https://app.tidemarkanalytics.com">
-        <p class="description"><?php esc_html_e('Where your Tidemark runs, for example https://stats.example.com. On Tidemark Cloud this is https://app.tidemarkanalytics.com.', 'tidemark-analytics'); ?></p>
+        <input type="url" id="tidemark-address" class="regular-text code" name="<?php echo esc_attr(self::OPTION); ?>[address]" value="<?php echo esc_attr($options['address']); ?>" placeholder="https://www.tidemarkanalytics.com">
+        <p class="description"><?php esc_html_e('Where your Tidemark runs, for example https://stats.example.com. On Tidemark Cloud this is https://www.tidemarkanalytics.com.', 'tidemark-analytics'); ?></p>
         <?php
     }
 

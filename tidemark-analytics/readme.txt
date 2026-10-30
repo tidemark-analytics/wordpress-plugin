@@ -42,7 +42,7 @@ This plugin loads a JavaScript file from the Tidemark server whose address you e
 
 = Where do I find the address? =
 
-It is the address you open Tidemark at, for example `https://stats.example.com`. On Tidemark Cloud it is `https://app.tidemarkanalytics.com`. If you paste the whole script address from your Tidemark snippet, the plugin keeps only the part it needs.
+It is the address you open Tidemark at, for example `https://stats.example.com`. On Tidemark Cloud it is `https://www.tidemarkanalytics.com`. If you paste the whole script address from your Tidemark snippet, the plugin keeps only the part it needs.
 
 = What should the site name be? =
 
