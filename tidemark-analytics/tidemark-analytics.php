@@ -5,7 +5,7 @@ use Tidemark\Analytics\Tracker;
 
 /**
  * Plugin Name:       Tidemark Analytics
- * Plugin URI:        https://tidemarkanalytics.com
+ * Plugin URI:        https://github.com/tidemark-analytics/wordpress-plugin
  * Description:       Adds the Tidemark tracking script to your site. Privacy-friendly statistics with no cookies, and nothing stored in WordPress.
  * Version:           1.0.0
  * Requires at least: 6.3
