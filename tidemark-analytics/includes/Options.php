@@ -54,7 +54,7 @@ class Options
      */
     public static function normalizeAddress(string $address): string
     {
-        $parts = parse_url(trim($address));
+        $parts = wp_parse_url(trim($address));
 
         if (! is_array($parts) || empty($parts['host']) || ! in_array($parts['scheme'] ?? '', ['http', 'https'], true)) {
             return '';

@@ -27,7 +27,12 @@ require_once __DIR__.'/includes/Options.php';
 require_once __DIR__.'/includes/Settings.php';
 require_once __DIR__.'/includes/Tracker.php';
 
-$tidemarkSettings = new Settings;
-$tidemarkSettings->register();
+function tidemark_analytics_boot()
+{
+    $settings = new Settings;
+    $settings->register();
 
-(new Tracker($tidemarkSettings))->register();
+    (new Tracker($settings))->register();
+}
+
+tidemark_analytics_boot();

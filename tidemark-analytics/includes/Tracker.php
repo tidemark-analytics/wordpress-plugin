@@ -30,9 +30,7 @@ class Tracker
             return;
         }
 
-        // The version is left off the address on purpose: the script reads its variants from its own file name, and a cached
-        // copy should stay valid until the file name changes.
-        wp_register_script(self::HANDLE, Options::scriptUrl($options), [], null, ['strategy' => 'defer']);
+        wp_register_script(self::HANDLE, Options::scriptUrl($options), [], TIDEMARK_ANALYTICS_VERSION, ['strategy' => 'defer']);
 
         // Lets themes and plugins call plausible('Event name') before the script has loaded; the script plays these back.
         wp_add_inline_script(self::HANDLE, 'window.plausible=window.plausible||function(){(window.plausible.q=window.plausible.q||[]).push(arguments)};', 'before');
